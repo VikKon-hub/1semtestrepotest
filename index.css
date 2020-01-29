@@ -1,0 +1,857 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 35px;
+    margin: auto;
+    margin: 50px 0px;
+    color: #666;
+}
+
+h3{
+    margin: 15px 0px;
+    text-align: center;
+    color: #666;
+}
+
+h4{
+    font-size: 20px;
+    color: rgba(255,255,255,0.5)
+}
+
+/*navigation*/
+.nav{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+}
+/*the list within nav*/
+.nav > li{
+    margin:0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    background-color: #fff;
+}
+/*the links inside li tags*/
+.anav{
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    display: block;
+}
+/*links inside nav with underline*/
+.anav2{
+    color: #000000;
+    padding: 20px;
+    display: block;
+    text-decoration-color: #666;
+    
+}
+.anav:hover{
+    color: #bbb;
+    text-decoration-color: #bbb;
+}
+
+.anav2:hover{
+    color: #bbb;
+    text-decoration-color: #bbb;
+}
+
+/*sub navigation*/
+.subnav{
+    display: flex;
+    top: 64px;
+    justify-content: center;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+}
+/*the list within nav*/
+.subnav > li{
+    max-width: 12%;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    background-color: #fff;
+}
+/*the links inside li tags*/
+.subanav{
+    text-decoration: none;
+    color: #666;
+    padding: 20px;
+    display: block;
+}
+/*links inside nav with underline*/
+.subanav2{
+    color: #666;
+    padding: 20px;
+    display: block;
+    text-decoration-color: #666;
+}
+.subanav:hover{
+    color: #bbb;
+    text-decoration-color: #bbb;
+}
+
+.subanav2:hover{
+    color: #bbb;
+    text-decoration-color: #bbb;
+}
+
+
+/*fixed background*/
+/* there is one chunk here for every backgroundcolor*/
+.fixed-bg{
+    background-image: url("img/bg/gul.svg");
+    min-height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fixed-bg2{
+    background-image: url("img/bg/groen.svg");
+    min-height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fixed-bg3{
+    background-image: url("img/bg/roed.svg");
+    min-height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* icons on subpages*/
+.bgicon{
+    display: block;
+    width: 350px;
+    margin: 0px 0px 0px -175px;
+    top: 20vh;
+    position: fixed;
+    left: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+/*text below icons on subpages*/
+.bgicontext{
+    margin-top: 370px;
+    font-size: 40px;
+    color: #666;
+}
+
+/*the two boxes that contains text and picture on home page*/
+.bgitems{
+    flex: 50%;
+}
+
+/*picture of me*/
+.me{
+    margin-left: auto;
+    margin-right: 10%;
+    margin-bottom: 80px;
+    padding: 10px;
+    height: 50vh;
+    position: fixed;
+    right: 0;
+    top: 27vh;
+}
+
+/*text besides picture of me*/
+.bgtext{
+    margin-left: 10%;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding: 10px;
+    position: fixed;
+    text-align: right;
+    font-size: 60px;
+    color: #666;
+    top: 27vh;
+}
+
+/*The divs that contains the topics*/
+.bgtext > div{
+    text-align: right;
+    background: none;
+    margin: 5px;
+    color: #666;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+/*The container in which all content is*/
+main{
+    position: relative;
+    background: #fff;
+    padding: 25px;
+    font-size: 25px;
+    color:#666;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* the logo on top of every page*/
+.toplogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding: 10px;
+    width: 400px;
+}
+.toplogohome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 400px;
+}
+
+/*picture on top of About me page*/
+.profilepicture{
+    margin: 40px auto 40px auto
+}
+
+/*box for social link in top*/
+.toplinkbox{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 15px;
+    max-width: 100%;
+}
+/* a-tag in which social icon img's are */
+.topsociallink{
+    text-align: center;
+    margin: 0px 50px;
+    text-decoration: none;
+}
+
+/*the few lines of text explaining what the page is about*/
+.pageinfo{
+    margin-bottom: 100px;
+    max-width: 820px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+/*the icons in main on home page*/
+.icons{
+    width: 20%;
+    max-width: 20vw;
+    margin: 40px auto 20px auto;
+}
+
+/*the fullscreen overlay for zoom*/
+#overlay, #overlay2, #overlay3, #overlay4, #overlay5, 
+#overlay6, #overlay7, #overlay8, #overlay9, #overlay10, 
+#overlay11, #overlay12, #overlay13, #overlay14, #overlay15, 
+#overlay16, #overlay17, #overlay18, #overlay19, #overlay20, 
+#overlay21, #overlay22, #overlay23, #overlay24, #overlay25, 
+#overlay26, #overlay27, #overlay28, #overlay29, #overlay30, 
+#overlay31, #overlay32, #overlay33, #overlay34, #overlay35, 
+#overlay36, #overlay37, #overlay38, #overlay39, #overlay40, 
+#overlay41, #overlay42, #overlay43, #overlay44, #overlay45, 
+#overlay46{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+/*the container in which the zoomed image is*/
+.zoombox{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+/*class for images with zoom*/
+.zoomimage{
+    max-width: 100vw;
+    max-height: 70vh;
+}
+.zoomimagewide{
+    max-width: 95vw;
+    max-height: 70vh;
+}
+
+/*class for the articles, the */
+.columns{    
+    background-color: #ffffff;
+    padding: 1px;
+    color: #000;
+    align-items: center;
+}
+
+/*special columns for the software page. Icons needed to be smaller*/
+.appcolumns{    
+    background-color: #ffffff;
+    padding: 1px;
+    color: #000;
+    align-items: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+/*The columns in which the two rows containing the columns for content */
+.columnbox{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #666;
+}
+
+/*The rows in which column 1/2, containing content, sits*/
+.rows {
+    color: #666;
+    text-decoration: none;
+    margin: 50px 10px;
+    flex: 1;
+}
+
+/*the title above column 1/2, containing content*/
+.ctitle{
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* has the same settings as "content" in order to put the 
+imageoverlay inside. You can't put a div inside a img 
+tag so this replaces the images and contains both the 
+img and the div for imageoverlay.*/
+.linkhover{
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trilinkhover{
+    max-width: 100%;
+}
+/*required for overlay to be on top of image*/
+.linkhover, .trilinkhover{
+    position: relative;
+}
+/*overlay for image links*/
+.imageoverlay {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6px; 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/*same as above but for rows of three, the pictures are only 80%*/
+.triimageoverlay{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6px; 
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff; 
+    width: 80%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/* hover for overlay for image links*/
+.trilinkhover:hover .triimageoverlay {
+    opacity: 1;
+}
+.linkhover:hover .imageoverlay {
+    opacity: 1;
+}
+
+/*the column containing text*/
+.column2{
+    margin: 10px auto 0px auto;
+    max-width: 80%;
+}
+
+/*class on all the pictures on subpages*/
+.content{
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+    cursor: pointer;
+}
+/* content but with links*/
+.contentlink{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    cursor: pointer;
+    padding: 0;
+}
+
+.tricontentlink{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    cursor: pointer;
+    padding: 0;
+}
+/*class for img inside triitems*/
+.tricontent{
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    cursor: pointer;
+}
+
+/*content, but for software icon on software page*/
+.software{
+    max-width: 200px;
+    margin: 50px auto 0 auto;
+}
+
+/*class for the <a> tag containing wideitems; pictures taking up the whole width*/
+.widecontent{
+    max-height: 80vh;
+    max-width: 90%;
+    margin: auto;
+}
+
+/*class for the a tag for rows of three pictures inside columnbox*/
+.triitems {
+    color: #666;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+/* class for the pictures inside the <a> tag 'wideitems'*/
+.wideitems {
+    margin: 0px 10px;
+}
+
+/*class for text taking up the whole width*/
+.widetext{
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 0px 60px 0px;
+    max-width: 900px;
+}
+
+/*class for text that needs extra width. used on 'About Me' page*/
+.columnwidetext{
+    margin: 0px auto 20px auto;
+    font-size: 20px;
+    text-align: left;
+    width: 60%;
+}
+
+.fullbanner{
+    max-height: 45vh;
+}
+
+.fullbannerblock{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* gallery on photography page*/
+/*horizontal*/
+.galleryrow{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 5px;
+}
+/*vertical*/
+.gallerycolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+
+.galleryimg {
+    margin-top: 10px;
+    vertical-align: middle;
+    width:100%;
+    cursor: pointer;
+}
+
+/*linkbuttons on some pages*/
+.buttonbox{
+    margin: 100px auto;
+}
+
+.linkbutton{
+    padding: 25px;
+    max-width: 700px;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.linkbutton:hover{
+    background-color: #666;
+}
+
+/* class for links within text like 
+under the banner on illstrations page*/
+.textlinks{
+    text-decoration-color: #666;
+    color: #666;
+}
+
+/*contact form*/
+
+.formtitle{
+    font-size: 30px;
+}
+
+/* the containers in which you write*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* what defines writing*/
+input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #666;
+}
+
+/*the box containing the whole form*/
+.form {
+    display: block;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 1px solid #666;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+/*footer for page with full banner*/
+.footerfixed{
+    position: fixed;
+    bottom: 0;
+}
+
+/* the box for text*/
+.footerbox1{
+    flex: 50%;
+    text-align: right;
+    align-items: center;
+    padding: 30px 55px;
+    color: #000;
+}
+
+/*box for my name*/
+.footname{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/*box for info*/
+.footinfo{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/*the box for social icons*/
+.footerbox2{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+/*The <a> tag that contains pictures and linktext*/
+.sociallink{
+    text-align: center;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* class fir socialicon img*/
+.socialicons{
+    width: 50px;
+}
+
+
+@media screen and (max-width:1150px){
+    .subnav > li{
+        font-size: 14px;
+    }
+    
+    .subanav{
+        padding: 20px 8px;
+    }
+    
+    .subanav2{
+        padding: 20px 8px;
+    }
+    
+    .bgtext{
+        font-size: 35px;
+        top: 25vh;
+        max-width: 100%;
+    }
+    
+    .bgtext > div{
+        font-size: 20px;
+    }
+    
+    .gallerycolumn {
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+    .linkbutton{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:830px){
+    h4{
+        font-size: 15px;
+    }
+    
+    .topsociallink{
+        margin: 0px 15px;
+    }
+    
+    .anav{
+        padding: 20px 19px;
+    }
+    
+    .subnav{
+        display: none;
+    }
+    
+    .fixed-bg{;
+        min-height: 71vh;
+    }
+    
+    .fixed-bg2{;
+        min-height: 71vh;
+    }
+    
+    .fixed-bg3{;
+        min-height: 71vh;
+    }
+    
+    .bgicon{
+        width: 200px;
+        margin: 0px 0px 0px -100px;
+        top: 27vh;
+    }
+    
+    .bgicontext{
+        margin-top: 220px;
+        font-size: 25px
+    }
+    
+    main{
+        padding: 15px;
+    }
+    
+    .columnbox{
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .rows{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .ctitle{
+        margin: 0;
+        padding: 0;
+    }
+    .column{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .wideitems{
+        margin: auto;
+    }
+    
+    .widecontent{
+        width: 95%;
+        max-width: 95%;
+    }
+    
+    .content{
+        width: 95%;
+        max-width: 95%;
+        margin: 0;
+    }
+    .imageoverlay{
+        display: none;
+    }
+    
+    
+    .column2{
+        width: 95%;
+        max-width: 95%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    
+    .toplogo{
+        width:300px;
+    }
+    
+    .toplogohome{
+        width:300px;
+    }
+    
+    .icons{
+        width: 30%;
+        max-width: 30%;
+        padding: 0;
+        margin: 70px auto 0px auto;
+    }
+    
+    .zoombox{
+        font-size: 25px;
+    }
+    .zoomimage{
+        max-height: 70vh;
+        max-width: 100vw;
+    }
+    .zoomimagewide{
+        font-size: 25px;
+        max-width: 100vw;
+        max-height: 75vh;
+    }
+    
+    
+    .tricontent{
+        width: 80%;
+    }
+    
+    .columnwidetext{
+        max-width: 95%;
+        width: 80%;
+    }
+    
+    .aboutspacing{
+    height: 50px;
+    }
+    
+    .gallerycolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerbox1{
+        text-align: center;
+    }
+    
+    .bgtext{
+        top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 80px 10% 0px auto;
+        right: 0;
+        text-align: left;
+    }
+    
+    .bgtext > div{
+        text-align: left;
+    }
+    
+    .me{
+        top: 20vh;
+        right: 0px;
+        margin: 30px auto 0px auto;
+    }
+}
